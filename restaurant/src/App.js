@@ -1,10 +1,23 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MenuPage from './Components/MenuPage';
+import BoissonsPage from './Components/BoissonsPage';
+import ContactPage from './Components/ContactPage';
+import Home from './Components/Home';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <h1>Projet Restaurant Chantal</h1>
+      <Routes>
+      <Route exact path="/" element={<Home/>}></Route>
+      <Route exact path="/menu" element={<MenuPage/>}></Route>
+      <Route exact path="/boisson" element={<BoissonsPage/>}></Route>
+      <Route exact path="/contact" element={<ContactPage/>}></Route>
+      </Routes>
     </div>
+    </Router>
   );
 }
 
