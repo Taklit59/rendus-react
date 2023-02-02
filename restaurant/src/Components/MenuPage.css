@@ -1,16 +1,15 @@
-h1{
+*{
     text-align: center;
 }
-.allButton{
-    text-align: center;
-    padding: 30px;
+p{
+    margin: auto;
+    padding: 20px;
+    width: 600px;
 }
-.allButton>button{
-    border-radius: 10px;
-    margin: 0 10px;
-    padding: 10px;
-    width: 100px;
-    cursor: pointer;
-    box-shadow: 0 0 10px black;
-    border: none;
+span{
+    font-size: small;
+    color: gray;
+}
+.contenuMenu{
+    margin-bottom: 100px;
 }

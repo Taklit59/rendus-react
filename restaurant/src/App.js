@@ -5,10 +5,12 @@ import MenuPage from './Components/MenuPage';
 import BoissonsPage from './Components/BoissonsPage';
 import ContactPage from './Components/ContactPage';
 import Home from './Components/Home';
+import MenuContext from './Components/Context.jsx/MenuContext'
 
 function App() {
   return (
     <Router>
+    <MenuContext>
     <div className="App">
       <Routes>
       <Route exact path="/" element={<Home/>}></Route>
@@ -17,6 +19,7 @@ function App() {
       <Route exact path="/contact" element={<ContactPage/>}></Route>
       </Routes>
     </div>
+    </MenuContext>
     </Router>
   );
 }

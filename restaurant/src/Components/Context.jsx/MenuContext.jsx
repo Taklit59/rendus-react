@@ -1,17 +1,17 @@
 import React, {createContext, useState} from "react";
 export const monContexte = createContext();
 
-export default function LangueContext(props) {
+export default function MenuContext(props) {
     let menuOption = ["ENTREE", "PLAT", "DESSERT"];
-    if (menuOption === 1) {
-        menuOption = "PLAT"
-    }
+    
     const [choiceMenu, setChoiceMenu] = useState(menuOption);
-    const modifyMenu = (newMenu) => {
+
+    const modifyButton = (newMenu) => {
         setChoiceMenu(newMenu)
     }
+    
     return (
-        <monContexte.Provider value={{choiceMenu, modifyMenu}}>
+        <monContexte.Provider value={{choiceMenu, modifyButton}}>
             {props.children}
         </monContexte.Provider>
     )

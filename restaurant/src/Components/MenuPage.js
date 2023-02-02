@@ -1,34 +1,33 @@
-import {React} from 'react'
+import {React, useContext} from 'react'
 import Header from './Header'
 import './MenuPage.css'
 import { menuContaint } from './DataMenus'
-// import { monContexte } from './Context.jsx/MenuContext'
-// import MenuContext from './Context.jsx/MenuContext'
+import Buttons from './Buttons'
+import { monContexte } from './Context.jsx/MenuContext'
 
 
 function MenuPage() {
-  // const {choiceMenu} = useContext(monContexte)
-  
-  console.log(menuContaint.DESSERT.title);
+
+  let {choiceMenu} = useContext(monContexte)
+  if (typeof choiceMenu !== 'string') {
+    choiceMenu = "ENTREE"
+  }
   return (
-    // <MenuContext>
     <div className='contenuMenu'>
         <Header/>
         <h1>Menu</h1>
-        <div className='allButton'>
-          <button>
-            Entrée
-          </button>
-          <button>
-            Plat
-          </button>
-          <button>
-            Dessert
-          </button>
-        </div>
-
+        <Buttons/>
+        <h2>{menuContaint[choiceMenu].title}</h2>
+        <p>{menuContaint[choiceMenu].text1}</p>
+        <span>{menuContaint[choiceMenu].textOu}</span>
+        <p>{menuContaint[choiceMenu].text2}</p>
+        <span>{menuContaint[choiceMenu].textOu}</span>
+        <p>{menuContaint[choiceMenu].text3}</p>
+        <span>{menuContaint[choiceMenu].textOu}</span>
+        <p>{menuContaint[choiceMenu].text4}</p>
+        <span>{menuContaint[choiceMenu].textOu}</span>
+        <p>{menuContaint[choiceMenu].text5}</p>
     </div>
-    /* </MenuContext> */
   )
 }
 
