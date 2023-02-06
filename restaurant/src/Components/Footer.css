@@ -1,0 +1,24 @@
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 50px;
+    border-top: 2px solid black;
+    margin-bottom: 50px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+footer div .rs {
+    margin-top: 40px;
+    margin-inline: 30px;
+    color: black;
+    height: 50px;
+    width: 50px;
+}

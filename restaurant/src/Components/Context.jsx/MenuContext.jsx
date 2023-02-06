@@ -2,7 +2,7 @@ import React, {createContext, useState} from "react";
 export const monContexte = createContext();
 
 export default function MenuContext(props) {
-    let menuOption = ["ENTREE", "PLAT", "DESSERT"];
+    let menuOption = ["Nos Entrées", "Nos Plats", "Nos Desserts", "Nos Boissons"];
     
     const [choiceMenu, setChoiceMenu] = useState(menuOption);
 

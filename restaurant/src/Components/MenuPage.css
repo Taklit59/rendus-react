@@ -1,14 +1,22 @@
 *{
     text-align: center;
 }
-p{
+.nosEntrées{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.text{
     margin: auto;
-    padding: 20px;
     width: 600px;
 }
-span{
+.motOu{
     font-size: small;
     color: gray;
+    padding: 15px;
+}
+
+.text:last-child> .motOu{
+    display: none;
 }
 .contenuMenu{
     margin-bottom: 100px;

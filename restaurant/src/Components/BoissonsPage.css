@@ -1,0 +1,17 @@
+.verre{
+    width: 30%;
+    height: 100vh;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.listesBoissons{
+    width: 30%;
+}
+.conteneurBoissons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.titrePrincipale{
+    margin-bottom: 40px;
+}

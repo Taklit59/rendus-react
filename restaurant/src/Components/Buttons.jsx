@@ -10,15 +10,15 @@ function Buttons() {
   return (
     <div className='allButton'>
 
-    <button onClick={() => modifyButton("ENTREE")} >
+    <button onClick={() => modifyButton("Nos Entrées")} >
         Entrée
     </button>
       
-    <button onClick={() => modifyButton("PLAT")} >
+    <button onClick={() => modifyButton("Nos Plats")} >
         Plat
     </button>
     
-    <button onClick={() => modifyButton("DESSERT")} >
+    <button onClick={() => modifyButton("Nos Desserts")} >
         Dessert
     </button>
   </div>
